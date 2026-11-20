@@ -1,57 +1,49 @@
 <!doctype html>
-<html lang="vi">
+<html lang="vi" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ENGBBQ — Cổng Thông Tin &amp; Game Sinh Tồn Thế Giới Mở</title>
+    <title>ENGBBQ — Portfolio &amp; Sản phẩm Web</title>
     <meta
       name="description"
-      content="Cổng trang chủ ENGBBQ. Khám phá thế giới mở 2D, săn kho báu, xây dựng dinh thự và triệu hồi thú cưng tại loot.engbbq.me."
+      content="Portfolio cá nhân của ENGBBQ — Kỹ sư Fullstack &amp; DevOps. Giới thiệu các dự án tiêu biểu đang vận hành: game thế giới mở loot.engbbq.me và hệ thống Tử Vi Đẩu Số AI tuvi.engbbq.me."
     />
+    <meta name="theme-color" content="#09090b" />
+    <link rel="canonical" href="https://engbbq.me/" />
+    <link rel="icon" type="image/png" href="/favicon.png?v=orig" />
+    <link rel="apple-touch-icon" href="/favicon.png?v=orig" />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:site_name" content="ENGBBQ" />
+    <meta property="og:url" content="https://engbbq.me/" />
+    <meta property="og:image" content="https://engbbq.me/engbbq_logo.png?v=orig" />
+    <meta property="og:title" content="ENGBBQ — Fullstack &amp; DevOps Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio cá nhân của ENGBBQ — Kỹ sư Fullstack &amp; DevOps với các dự án trực tiếp thiết kế kiến trúc và vận hành: loot.engbbq.me và tuvi.engbbq.me."
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://engbbq.me/engbbq_logo.png?v=orig" />
+    <meta name="twitter:title" content="ENGBBQ — Fullstack &amp; DevOps Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Portfolio cá nhân của ENGBBQ — Kỹ sư Fullstack &amp; DevOps với các dự án trực tiếp thiết kế kiến trúc và vận hành: loot.engbbq.me và tuvi.engbbq.me."
+    />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <div class="bg-orb orb-1" aria-hidden="true"></div>
-    <div class="bg-orb orb-2" aria-hidden="true"></div>
-    <div class="bg-grid" aria-hidden="true"></div>
-
-    <header class="topbar">
-      <a href="#/" class="brand" data-route="/">
-        <span class="brand-badge">🔥</span>
-        <span class="brand-text">ENGBBQ<span class="brand-dot">.ME</span></span>
-      </a>
-
-      <nav class="nav-links" aria-label="Điều hướng chính">
-        <a href="#/" class="nav-link is-active" data-route="/">Trang chủ</a>
-        <a href="#/features" class="nav-link" data-route="/features">Tính năng Game</a>
-        <a href="#/guide" class="nav-link" data-route="/guide">Hướng dẫn nhanh</a>
-      </nav>
-
-      <a
-        href="https://loot.engbbq.me"
-        class="btn-play-nav"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🎮 Vào Chơi Ngay
-      </a>
-    </header>
-
-    <main id="app-root" class="spa-root" aria-live="polite"></main>
-
-    <footer class="footer">
-      <span>© 2026 ENGBBQ • Cổng kết nối tới</span>
-      <a href="https://loot.engbbq.me" target="_blank" rel="noopener noreferrer">
-        loot.engbbq.me
-      </a>
-    </footer>
-
-    <script type="module" src="./app.js"></script>
+  <body class="bg-[#09090b] text-[#fafafa] antialiased selection:bg-teal-500/30 selection:text-teal-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
